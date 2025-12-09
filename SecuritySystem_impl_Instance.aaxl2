@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance">
+  <instance:SystemInstance name="SecuritySystem_impl_Instance" category="system">
+    <componentInstance name="this_EthernetCommunication" category="bus">
+      <subcomponent xsi:type="aadl2:BusSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedBusSubcomponent.0"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:BusImplementation" href="../laboratorium9.aadl#main_sys2.EthernetCommunication.impl"/>
+    </componentInstance>
+    <componentInstance name="this_MotionSensor" category="device">
+      <featureInstance name="motion_detected" category="eventPort" direction="out">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.25/@ownedEventPort.0"/>
+      </featureInstance>
+      <featureInstance name="bus_access" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.25/@ownedBusAccess.0"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.0"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:DeviceType" href="../laboratorium9.aadl#main_sys2.MotionSensor"/>
+    </componentInstance>
+    <componentInstance name="this_MagneticAlarmSensor" category="device">
+      <featureInstance name="alarm_set_on" category="eventPort" direction="out">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.27/@ownedEventPort.0"/>
+      </featureInstance>
+      <featureInstance name="bus_access" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.27/@ownedBusAccess.0"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.1"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:DeviceType" href="../laboratorium9.aadl#main_sys2.MagneticAlarmSensor"/>
+    </componentInstance>
+    <componentInstance name="this_Camera" category="device">
+      <featureInstance name="check_motion" category="eventPort" direction="out">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.29/@ownedEventPort.0"/>
+      </featureInstance>
+      <featureInstance name="recording_video" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.29/@ownedEventPort.1"/>
+      </featureInstance>
+      <featureInstance name="video_registered" category="eventPort" direction="out">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.29/@ownedEventPort.2"/>
+      </featureInstance>
+      <featureInstance name="bus_access" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.29/@ownedBusAccess.0"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.2"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:DeviceType" href="../laboratorium9.aadl#main_sys2.Camera"/>
+    </componentInstance>
+    <componentInstance name="this_LaserSensor" category="device">
+      <featureInstance name="alarm_set_on" category="eventPort" direction="out">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.31/@ownedEventPort.0"/>
+      </featureInstance>
+      <featureInstance name="bus_access" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.31/@ownedBusAccess.0"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.3"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:DeviceType" href="../laboratorium9.aadl#main_sys2.LaserSensor"/>
+    </componentInstance>
+    <componentInstance name="this_AlarmUnit" category="device">
+      <featureInstance name="alarm_on_off" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.33/@ownedEventPort.0"/>
+      </featureInstance>
+      <featureInstance name="bus_access" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.33/@ownedBusAccess.0"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.4"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:DeviceType" href="../laboratorium9.aadl#main_sys2.AlarmUnit"/>
+    </componentInstance>
+    <componentInstance name="this_DoorLockMechanism" category="device">
+      <featureInstance name="lock_the_doors" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.35/@ownedEventPort.0"/>
+      </featureInstance>
+      <featureInstance name="bus_access" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.35/@ownedBusAccess.0"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.5"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:DeviceType" href="../laboratorium9.aadl#main_sys2.DoorLockMechanism"/>
+    </componentInstance>
+    <componentInstance name="this_Phone" category="device">
+      <featureInstance name="call_police" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.37/@ownedEventPort.0"/>
+      </featureInstance>
+      <featureInstance name="bus_access" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.37/@ownedBusAccess.0"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.6"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:DeviceType" href="../laboratorium9.aadl#main_sys2.Phone"/>
+    </componentInstance>
+    <componentInstance name="this_Controller" category="process">
+      <featureInstance name="motion_detected_in" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.0"/>
+      </featureInstance>
+      <featureInstance name="magnet_alarm_set_on_in" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.1"/>
+      </featureInstance>
+      <featureInstance name="camera_chceck_detection_in" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.2"/>
+      </featureInstance>
+      <featureInstance name="recording_camera_video_out" category="eventPort" direction="out">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.3"/>
+      </featureInstance>
+      <featureInstance name="video_registered_in" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.4"/>
+      </featureInstance>
+      <featureInstance name="laser_alarm_set_on_in" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.5"/>
+      </featureInstance>
+      <featureInstance name="alarm_on_out" category="eventPort" direction="out">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.6"/>
+      </featureInstance>
+      <featureInstance name="door_lock_out" category="eventPort" direction="out">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.7"/>
+      </featureInstance>
+      <componentInstance name="this_thread_MotionDetected" category="thread">
+        <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedThreadSubcomponent.0"/>
+        <index>0</index>
+        <classifier xsi:type="aadl2:ThreadImplementation" href="../laboratorium9.aadl#main_sys2.MotionDetected.impl"/>
+      </componentInstance>
+      <componentInstance name="this_thread_ControlRules" category="thread">
+        <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedThreadSubcomponent.1"/>
+        <index>0</index>
+        <classifier xsi:type="aadl2:ThreadImplementation" href="../laboratorium9.aadl#main_sys2.ControlRules.impl"/>
+      </componentInstance>
+      <componentInstance name="this_thread_AlarmON" category="thread">
+        <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedThreadSubcomponent.2"/>
+        <index>0</index>
+        <classifier xsi:type="aadl2:ThreadImplementation" href="../laboratorium9.aadl#main_sys2.AlarmON.impl"/>
+      </componentInstance>
+      <componentInstance name="this_thread_CameraOperate" category="thread">
+        <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedThreadSubcomponent.3"/>
+        <index>0</index>
+        <classifier xsi:type="aadl2:ThreadImplementation" href="../laboratorium9.aadl#main_sys2.CameraOperate.impl"/>
+      </componentInstance>
+      <subcomponent xsi:type="aadl2:ProcessSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedProcessSubcomponent.0"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:ProcessImplementation" href="../laboratorium9.aadl#main_sys2.Controller.impl"/>
+    </componentInstance>
+    <componentInstance name="this_CallPoliceController" category="process">
+      <featureInstance name="phone_out" category="eventPort" direction="out">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedEventPort.0"/>
+      </featureInstance>
+      <featureInstance name="motion_detected_in" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedEventPort.1"/>
+      </featureInstance>
+      <featureInstance name="magnet_alarm_set_on_in" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedEventPort.2"/>
+      </featureInstance>
+      <featureInstance name="camera_chceck_detection_in" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedEventPort.3"/>
+      </featureInstance>
+      <featureInstance name="video_registered_in" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedEventPort.4"/>
+      </featureInstance>
+      <featureInstance name="laser_alarm_set_on_in" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedEventPort.5"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:ProcessSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedProcessSubcomponent.1"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:ProcessType" href="../laboratorium9.aadl#main_sys2.CallPoliceController"/>
+    </componentInstance>
+    <componentInstance name="this_MainProcessor" category="processor">
+      <featureInstance name="bus_access" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedBusAccess.0"/>
+      </featureInstance>
+      <componentInstance name="this_RAM" category="memory">
+        <subcomponent xsi:type="aadl2:MemorySubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.17/@ownedMemorySubcomponent.0"/>
+        <index>0</index>
+        <classifier xsi:type="aadl2:MemoryType" href="../laboratorium9.aadl#main_sys2.RAM"/>
+      </componentInstance>
+      <subcomponent xsi:type="aadl2:ProcessorSubcomponent" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedProcessorSubcomponent.0"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:ProcessorImplementation" href="../laboratorium9.aadl#main_sys2.MainProcessor.impl"/>
+    </componentInstance>
+    <connectionInstance name="this_EthernetCommunication -> this_MotionSensor.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.1/@featureInstance.1" source="/0/@componentInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.1/@featureInstance.1">
+        <connection xsi:type="aadl2:AccessConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.0"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_EthernetCommunication -> this_MagneticAlarmSensor.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.2/@featureInstance.1" source="/0/@componentInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.2/@featureInstance.1">
+        <connection xsi:type="aadl2:AccessConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.1"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_EthernetCommunication -> this_Camera.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.3/@featureInstance.3" source="/0/@componentInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.3/@featureInstance.3">
+        <connection xsi:type="aadl2:AccessConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.2"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_EthernetCommunication -> this_LaserSensor.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.4/@featureInstance.1" source="/0/@componentInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.4/@featureInstance.1">
+        <connection xsi:type="aadl2:AccessConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.3"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_EthernetCommunication -> this_AlarmUnit.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.5/@featureInstance.1" source="/0/@componentInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.5/@featureInstance.1">
+        <connection xsi:type="aadl2:AccessConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.4"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_EthernetCommunication -> this_DoorLockMechanism.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.6/@featureInstance.1" source="/0/@componentInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.6/@featureInstance.1">
+        <connection xsi:type="aadl2:AccessConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.5"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_EthernetCommunication -> this_Phone.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.7/@featureInstance.1" source="/0/@componentInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.7/@featureInstance.1">
+        <connection xsi:type="aadl2:AccessConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.6"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_MotionSensor.motion_detected -> this_Controller.motion_detected_in" complete="true" kind="portConnection" destination="/0/@componentInstance.8/@featureInstance.0" source="/0/@componentInstance.1/@featureInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.1/@featureInstance.0" destination="/0/@componentInstance.8/@featureInstance.0">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.0"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_MotionSensor.motion_detected -> this_CallPoliceController.motion_detected_in" complete="true" kind="portConnection" destination="/0/@componentInstance.9/@featureInstance.1" source="/0/@componentInstance.1/@featureInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.1/@featureInstance.0" destination="/0/@componentInstance.9/@featureInstance.1">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.9"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_MagneticAlarmSensor.alarm_set_on -> this_Controller.magnet_alarm_set_on_in" complete="true" kind="portConnection" destination="/0/@componentInstance.8/@featureInstance.1" source="/0/@componentInstance.2/@featureInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.2/@featureInstance.0" destination="/0/@componentInstance.8/@featureInstance.1">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.1"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_MagneticAlarmSensor.alarm_set_on -> this_CallPoliceController.magnet_alarm_set_on_in" complete="true" kind="portConnection" destination="/0/@componentInstance.9/@featureInstance.2" source="/0/@componentInstance.2/@featureInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.2/@featureInstance.0" destination="/0/@componentInstance.9/@featureInstance.2">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.10"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_Camera.check_motion -> this_Controller.camera_chceck_detection_in" complete="true" kind="portConnection" destination="/0/@componentInstance.8/@featureInstance.2" source="/0/@componentInstance.3/@featureInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.3/@featureInstance.0" destination="/0/@componentInstance.8/@featureInstance.2">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.2"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_Camera.check_motion -> this_CallPoliceController.camera_chceck_detection_in" complete="true" kind="portConnection" destination="/0/@componentInstance.9/@featureInstance.3" source="/0/@componentInstance.3/@featureInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.3/@featureInstance.0" destination="/0/@componentInstance.9/@featureInstance.3">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.12"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_Camera.video_registered -> this_Controller.video_registered_in" complete="true" kind="portConnection" destination="/0/@componentInstance.8/@featureInstance.4" source="/0/@componentInstance.3/@featureInstance.2">
+      <connectionReference context="/0" source="/0/@componentInstance.3/@featureInstance.2" destination="/0/@componentInstance.8/@featureInstance.4">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.4"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_Camera.video_registered -> this_CallPoliceController.video_registered_in" complete="true" kind="portConnection" destination="/0/@componentInstance.9/@featureInstance.4" source="/0/@componentInstance.3/@featureInstance.2">
+      <connectionReference context="/0" source="/0/@componentInstance.3/@featureInstance.2" destination="/0/@componentInstance.9/@featureInstance.4">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.11"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_LaserSensor.alarm_set_on -> this_Controller.laser_alarm_set_on_in" complete="true" kind="portConnection" destination="/0/@componentInstance.8/@featureInstance.5" source="/0/@componentInstance.4/@featureInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.4/@featureInstance.0" destination="/0/@componentInstance.8/@featureInstance.5">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.5"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_LaserSensor.alarm_set_on -> this_CallPoliceController.laser_alarm_set_on_in" complete="true" kind="portConnection" destination="/0/@componentInstance.9/@featureInstance.5" source="/0/@componentInstance.4/@featureInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.4/@featureInstance.0" destination="/0/@componentInstance.9/@featureInstance.5">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.13"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_Controller.recording_camera_video_out -> this_Camera.recording_video" complete="true" kind="portConnection" destination="/0/@componentInstance.3/@featureInstance.1" source="/0/@componentInstance.8/@featureInstance.3">
+      <connectionReference context="/0" source="/0/@componentInstance.8/@featureInstance.3" destination="/0/@componentInstance.3/@featureInstance.1">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.3"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_Controller.alarm_on_out -> this_AlarmUnit.alarm_on_off" complete="true" kind="portConnection" destination="/0/@componentInstance.5/@featureInstance.0" source="/0/@componentInstance.8/@featureInstance.6">
+      <connectionReference context="/0" source="/0/@componentInstance.8/@featureInstance.6" destination="/0/@componentInstance.5/@featureInstance.0">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.6"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_Controller.door_lock_out -> this_DoorLockMechanism.lock_the_doors" complete="true" kind="portConnection" destination="/0/@componentInstance.6/@featureInstance.0" source="/0/@componentInstance.8/@featureInstance.7">
+      <connectionReference context="/0" source="/0/@componentInstance.8/@featureInstance.7" destination="/0/@componentInstance.6/@featureInstance.0">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.7"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="this_CallPoliceController.phone_out -> this_Phone.call_police" complete="true" kind="portConnection" destination="/0/@componentInstance.7/@featureInstance.0" source="/0/@componentInstance.9/@featureInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.9/@featureInstance.0" destination="/0/@componentInstance.7/@featureInstance.0">
+        <connection xsi:type="aadl2:PortConnection" href="../laboratorium9.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.8"/>
+      </connectionReference>
+    </connectionInstance>
+    <classifier xsi:type="aadl2:SystemImplementation" href="../laboratorium9.aadl#main_sys2.SecuritySystem.impl"/>
+    <systemOperationMode name="No Modes"/>
+    <componentImplementation xsi:type="aadl2:SystemImplementation" href="../laboratorium9.aadl#main_sys2.SecuritySystem.impl"/>
+  </instance:SystemInstance>
+  <instance:ComponentInstance name="main_sys2::EthernetCommunication" category="bus">
+    <classifier xsi:type="aadl2:BusType" href="../laboratorium9.aadl#main_sys2.EthernetCommunication"/>
+  </instance:ComponentInstance>
+</xmi:XMI>
