@@ -53,8 +53,7 @@ Model instalacji alarmowej dotyczy systemu alarmowego budynku mieszkalnego z sys
 1.	kontroler główny
 2.	kontroler dodatkowy wzywający policję
 
-## **POŁĄCZENIA**
-:
+## **POŁĄCZENIA:**
 1.	połączenie magistralą Ethernet Communication
 
 ## **TYP DANYCH ZAPISU WIDEO:**
