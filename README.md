@@ -9,9 +9,9 @@ grzesgorniak@student.agh.edu.pl
 
 Model instalacji alarmowej dotyczy systemu alarmowego budynku mieszkalnego z systemem informacji o wykryciu zdarzenia (włamanie/ wtargnięcie). System po wykryciu zdarzenia z jednego z czujników uruchamia zapis wideo (od momentu wykrycia zdarzenia), alarm (ostrzeżenia świetlne i dźwiękowe) oraz jest w stanie powiadomić służby. System zbiera wszystkie informacje z czujników i podejmuje decyzję, aby uruchomić alarm, włączyć kamery oraz np. w odpowiednim momencie sterować mechanizmem zamykania wybranych drzwi tak aby: uchronić kluczowe pomieszczenia przed wtargnięciem, zatrzasnąć potencjalnego intruza do czasu przyjazdu policji. System otrzymuje również informacje z czujników, aby wysłać sygnał do kamery, która rozpoczyna zapis rejestrowanego obrazu wstecz do godziny czasu z różnych kamer w budynku. System informowania służb wysyła telefoniczne powiadomienie do jednostki okolicznej policji, gdy w budynku jest wykryte zdarzenie o wtargnięciu i sygnał taki nie zostanie zdezaktywowany w odpowiednim czasie (prewencja przypadkowego uruchomienia alarmu przez czynniki niezależne). System ten jest niezależny od głównego, ale współpracujący w celu ochrony przed potencjalnym atakiem, dlatego zawiera dwie pamięci oraz osobny procesor, który w sposób indywidualny przetwarza dane z czujników na innych zasadach niż system główny. Jedna z pamięci takiego procesu jest zastosowana do zbierania i przechowywania nagrań dla służb mundurowych w celu ułatwienia śledztwa po wtargnięciu.
 
-## **SPIS KOMPONENTÓW**
+### **SPIS KOMPONENTÓW**
 
-URZĄDZENIA:
+## **URZĄDZENIA:**
 1. czujnik ruchu, umieszczony w korytarzu pomieszczenia
 2. kontaktron, umieszczony we framudze drzwi, w celu wykrycia ich otwarcia
 3. kamera, umieszczona przed budynkiem, obejmując zasięgiem wejście do niego
