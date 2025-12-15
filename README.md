@@ -1,4 +1,3 @@
-# Instalacja-alarmowa
 ## **Instalacja alarmowa**
 
 Grzegorz Górniak
@@ -33,13 +32,13 @@ Model instalacji alarmowej dotyczy systemu alarmowego budynku mieszkalnego z sys
 
 ## **WĄTKI:**
 
-A) wątki służące do detekcji zdarzenia:
+**A) wątki służące do detekcji zdarzenia:**
 1.	Motion Detected, po wykryciu ruchu przesyła informację do kontrolerów
 2.	Magnet Alarm, po wykryciu otwarcia drzwi lub okien przesyła informację do kontrolerów
 3.	Laser Alarm, po wykryciu wejścia na podjazd budynku lub innych kluczowych wejść na zewnętrzne tereny posesji przesyła informację do kontrolerów
 4.	Camera Check Detection, detekcja zdarzenia takiego jak wykrycie osoby przez kamerę
 
-B) wątki służące do interpretacji danych z czujników oraz podejmowania odpowiednich decyzji:
+**B) wątki służące do interpretacji danych z czujników oraz podejmowania odpowiednich decyzji:**
 
 1.	Control Rules, otrzymuje informacje z wszystkich czujników, wyzwala alarmy, uruchamia zapis wideo
 2.	Process Video, przetwarzanie pliku wideo z kamery
