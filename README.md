@@ -73,7 +73,7 @@ Model instalacji alarmowej dotyczy systemu alarmowego budynku mieszkalnego z sys
 | Binding Contraints     | pozytywna |
 
 ## **Analiza zapotrzebowania na moc**
-![Diagram systemu](images/analiza_moc.png)
 
+<img width="350" height="621" alt="analiza_moc" src="https://github.com/user-attachments/assets/6332e42b-3f5c-416b-b660-1bb3e4fb7b58" />
 
 
