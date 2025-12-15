@@ -71,3 +71,7 @@ Model instalacji alarmowej dotyczy systemu alarmowego budynku mieszkalnego z sys
 | ARINC429 Consistency   | pozytywna |
 | Port Connenction       | pozytywna |
 | Binding Contraints     | pozytywna |
+
+## **Analiza zapotrzebowania na moc**
+
+
