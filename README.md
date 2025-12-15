@@ -63,3 +63,10 @@ Model instalacji alarmowej dotyczy systemu alarmowego budynku mieszkalnego z sys
 ## **TYP DANYCH ZAPISU WIDEO:**
 
 1.	zapis danych video w formie pliku mp4
+
+## **Analizy systemu wykonane przy pomocy OSATE:**
+
+| Analiza   | Wynik     |
+|-----------|-----------|
+| ARINC429 Consistency   | pozytywna    |
+| Port Connenction   | pozytywna   |
