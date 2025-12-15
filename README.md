@@ -5,11 +5,11 @@ Grzegorz Górniak
 
 grzesgorniak@student.agh.edu.pl
 
-**Opis Modelu**
+## **Opis Modelu**
 
 Model instalacji alarmowej dotyczy systemu alarmowego budynku mieszkalnego z systemem informacji o wykryciu zdarzenia (włamanie/ wtargnięcie). System po wykryciu zdarzenia z jednego z czujników uruchamia zapis wideo (od momentu wykrycia zdarzenia), alarm (ostrzeżenia świetlne i dźwiękowe) oraz jest w stanie powiadomić służby. System zbiera wszystkie informacje z czujników i podejmuje decyzję, aby uruchomić alarm, włączyć kamery oraz np. w odpowiednim momencie sterować mechanizmem zamykania wybranych drzwi tak aby: uchronić kluczowe pomieszczenia przed wtargnięciem, zatrzasnąć potencjalnego intruza do czasu przyjazdu policji. System otrzymuje również informacje z czujników, aby wysłać sygnał do kamery, która rozpoczyna zapis rejestrowanego obrazu wstecz do godziny czasu z różnych kamer w budynku. System informowania służb wysyła telefoniczne powiadomienie do jednostki okolicznej policji, gdy w budynku jest wykryte zdarzenie o wtargnięciu i sygnał taki nie zostanie zdezaktywowany w odpowiednim czasie (prewencja przypadkowego uruchomienia alarmu przez czynniki niezależne). System ten jest niezależny od głównego, ale współpracujący w celu ochrony przed potencjalnym atakiem, dlatego zawiera dwie pamięci oraz osobny procesor, który w sposób indywidualny przetwarza dane z czujników na innych zasadach niż system główny. Jedna z pamięci takiego procesu jest zastosowana do zbierania i przechowywania nagrań dla służb mundurowych w celu ułatwienia śledztwa po wtargnięciu.
 
-SPIS KOMPONENTÓW
+## **SPIS KOMPONENTÓW**
 
 URZĄDZENIA:
 1. czujnik ruchu, umieszczony w korytarzu pomieszczenia
@@ -20,18 +20,18 @@ URZĄDZENIA:
 6. mechanizm blokujący drzwi, dodatkowa blokada (oprócz zamka) zamykająca drzwi
 7. moduł telefonu, służący do poinformowania policji o wtargnięciu
 
-PROCESORY:
+## **PROCESORY:**
 
 1. procesor główny, którego zadaniem jest sterowaniem całym systemem czujników oraz urządzeń w taki sposób, aby ostrzegać i informować o potencjalnym zdarzeniu takim jak włamanie na teren posesji
 2.	procesor pomocniczy, którego zadaniem jest odpowiednia interpretacja danych z czujników, aby podjąć decyzję o zawiadomieniu organów o popełnieniu przestępstwa
 
-PAMIĘCI ŚŁUŻACE DO POPRAWNEGO DZIAŁANIA PROCESÓW:
+## **PAMIĘCI ŚŁUŻACE DO POPRAWNEGO DZIAŁANIA PROCESÓW:**
 
 1.	RAM
 2.	Flash
 3.	Pamięć, na którą zgrywane są dane z rejestracji video w postaci plików
 
-WĄTKI:
+## **WĄTKI:**
 
 A) wątki służące do detekcji zdarzenia:
 1.	Motion Detected, po wykryciu ruchu przesyła informację do kontrolerów
@@ -47,19 +47,19 @@ B) wątki służące do interpretacji danych z czujników oraz podejmowania odpo
 4.	Alarm ON, uruchomienie jednostki alarmowej wyzwalającej ostrzeżenia o wtargnięciu. Również stosowane są odpowiednie zabezpieczenia takie jak blokowanie drzwi systemem lock door czy uruchomienie dźwiękowego ostrzeżenia na terenie posesji.
 5.	Call Police Rules, informacja policji (telefoniczna) o wtargnięciu - po wykryciu zdarzenia
 
-SYSTEM:
+## **SYSTEM:**
 
 1.	Security System - główny system opisujący działanie infrastruktury zabezpieczającej
 
-KONTROLERY:
+## **KONTROLERY:**
 1.	kontroler główny
 2.	kontroler dodatkowy wzywający policję
 
-POŁĄCZENIA
+## **POŁĄCZENIA**
 :
 1.	połączenie magistralą Ethernet Communication
 
-TYP DANYCH ZAPISU WIDEO:
+## **TYP DANYCH ZAPISU WIDEO:**
 
 1.	zapis danych video w formie pliku mp4
 
