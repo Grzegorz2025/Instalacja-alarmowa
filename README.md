@@ -62,3 +62,10 @@ POŁĄCZENIA
 TYP DANYCH ZAPISU WIDEO:
 
 1.	zapis danych video w formie pliku mp4
+
+
+| Kolumna 1 | Kolumna 2 | Kolumna 3 |
+|-----------|-----------|-----------|
+| Dane 1    | Dane 2    | Dane 3    |
+| Dane 4    | Dane 5    | Dane 6    |
+
