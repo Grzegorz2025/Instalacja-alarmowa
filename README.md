@@ -23,6 +23,10 @@ Model instalacji alarmowej dotyczy systemu alarmowego budynku mieszkalnego z sys
 1. procesor główny, którego zadaniem jest sterowaniem całym systemem czujników oraz urządzeń w taki sposób, aby ostrzegać i informować o potencjalnym zdarzeniu takim jak włamanie na teren posesji
 2.	procesor pomocniczy, którego zadaniem jest odpowiednia interpretacja danych z czujników, aby podjąć decyzję o zawiadomieniu organów o popełnieniu przestępstwa
 
+## **PROCESY**
+1. proces główny, który ubsługuje kamerę, czujnik wykrycia ruchu, czujnik wykrycia otwarcia drzwi, czujnik laserowy oraz zapis nagrań video
+2. proces pomocniczy, który obsługuje powyższe funkcje z tym, że analizuje te wątki i umożliwia zadzwonienie na policję.
+
 ## **PAMIĘCI ŚŁUŻACE DO POPRAWNEGO DZIAŁANIA PROCESÓW:**
 
 1.	RAM
