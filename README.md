@@ -64,7 +64,7 @@ Model instalacji alarmowej dotyczy systemu alarmowego budynku mieszkalnego z sys
 
 1.	zapis danych video w formie pliku mp4
 
-## **Analizy systemu wykonane przy pomocy OSATE:**
+## **Podstawowe analizy systemu:**
 
 | Analiza   | Wynik     |
 |-----------|-----------|
@@ -73,7 +73,10 @@ Model instalacji alarmowej dotyczy systemu alarmowego budynku mieszkalnego z sys
 | Binding Contraints     | pozytywna |
 
 ## **Analiza zapotrzebowania na moc**
-
 <img width="350" height="621" alt="analiza_moc" src="https://github.com/user-attachments/assets/6332e42b-3f5c-416b-b660-1bb3e4fb7b58" />
 
+## **Analiza wagowa**
+<img width="818" height="603" alt="analiza_masa" src="https://github.com/user-attachments/assets/05465874-47d6-43c1-af8f-300bdb71dd39" />
 
+### **Model projektu**
+<img width="2324" height="961" alt="Instalacja_alarmowa" src="https://github.com/user-attachments/assets/ae9b3001-8f17-4c62-ba62-33a1ae8f277b" />
