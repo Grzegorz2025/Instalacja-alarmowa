@@ -1,6 +1,7 @@
 ## **Instalacja alarmowa**
 
-Grzegorz Górniak  grzesgorniak@student.agh.edu.pl
+Grzegorz Górniak <br>
+grzesgorniak@student.agh.edu.pl
 
 ## **Opis Modelu**
 
